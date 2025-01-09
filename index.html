@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xalli Bell's and Emily Menken's Partner Ice Cream</title>
+
+    <!--Stylesheet link-->
+    <link rel="stylesheet" href="IceCreamStyles/IceCreamStyles.css">
+
+    <!--Favicon-->
+<link rel="icon" type="image/jpg" href="IceCreamImgs/IceCreamIcon.jpg">
+
+<!-- Authors: Xalli Bell and Emily Menken-->
+
+</head>
+
+<body>
+
+    <!--div for page-->
+    <div id="main">
+
+<header>
+
+    <img src="IceCreamImgs/IceCreamMainPage.jpg" alt="3 Ice Cream Cones">
+
+    <h1> Xalli and Emily Ice Cream! </h1>
+
+    <p>Ice Cream! Fresh and Yummy! </p>
+
+    <hr>
+
+</header>
+
+<form action="thankyou.html" method="get">
+
+    <!-- Personal info-->
+    <fieldset>
+
+    <legend>Personal Info</legend>
+
+    <label>Name:
+        <input type="text" name="name">
+    </label>
+
+    <label>Email Address:
+        <input type="text" name="eAddress">
+    </label>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Order Details! </legend>
+            <select name="Flavor" id="Flavor">
+            <option value="none"> Select a Flavor!</option>
+            <option value="Vanilla">Vanilla</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Strawberry">Strawberry</option>
+        </select>
+
+    <!--Pick up vs delivery-->
+    <fieldset>
+
+    <legend> Select your cone!</legend>
+
+        <label>
+            <input type="radio" name="method" value="Cup"> Cup
+        </label>
+        <label>
+            <input type="radio" name="method" value="SugarCone"> Sugar Cone
+        </label>
+        <label>
+            <input type="radio" name="method" value="WaffleCone"> Waffle Cone
+        </label>
+
+    </fieldset>
+
+    <fieldset>
+
+        <!--Toppings-->
+    <legend>Toppings list:</legend>
+    <Legend>($1 dollar per extra topping)</Legend>
+
+    <label>
+        <input type="checkbox" name="toppings" value="Sprinkles">Sprinkles
+    </label>
+
+    <label>
+        <input type="checkbox" name="toppings" value="Nuts">Nuts
+    </label>
+
+    <label>
+        <input type="checkbox" name="toppings" value="Cherries">Cherries
+    </label>
+
+    <label>
+        <input type="checkbox" name="toppings" value="Whipped cream">Whipped Cream
+    </label>
+
+
+    </fieldset>
+
+
+
+
+
+
+
+</fieldset>
+
+<fieldset>
+<Legend>Additional Comments</legend>
+<textarea></textarea>
+</fieldset>
+
+    <!--Submit button-->
+    <button type="submit">Place Order!</button>
+
+
+
+</form>
+
+
+</div>
+<!--end div-->
+
+</body>
+</html>
