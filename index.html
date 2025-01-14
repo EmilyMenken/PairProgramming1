@@ -24,9 +24,8 @@
 
     <img src="IceCreamImgs/IceCreamMainPage.jpg" alt="3 Ice Cream Cones">
 
-    <h1> Xalli and Emily Ice Cream! </h1>
+    <h1>Ice Cream Order Form </h1>
 
-    <p>Ice Cream! Fresh and Yummy! </p>
 
     <hr>
 
@@ -35,34 +34,33 @@
 <form action="thankyou.html" method="get">
 
     <!-- Personal info-->
-    <fieldset>
+    <fieldset id="personalInfo">
 
-    <legend>Personal Info</legend>
+    <legend id="perInfo">Personal Information</legend>
 
     <label>Name:
-        <input type="text" name="name">
+        <input id="pInfo" type="text" name="name">
     </label>
 
-    <label>Email Address:
-        <input type="text" name="eAddress">
+    <label>Email: 
+        <input id="pInfo" type="text" name="eAddress">
     </label>
 
     </fieldset>
 
-    <fieldset>
-        <legend>Order Details! </legend>
+    <fieldset id="orderDetails">
+        <legend> Order Details </legend>
+
+     <p> Choose a flavor:</p>
             <select name="Flavor" id="Flavor">
-            <option value="none"> Select a Flavor!</option>
+            <option value="none"> Flavors...</option>
             <option value="Vanilla">Vanilla</option>
             <option value="Chocolate">Chocolate</option>
             <option value="Strawberry">Strawberry</option>
+            
         </select>
 
-    <!--Pick up vs delivery-->
-    <fieldset>
-
-    <legend> Select your cone!</legend>
-
+     <p>Choose a cone: </p>
         <label>
             <input type="radio" name="method" value="Cup"> Cup
         </label>
@@ -73,49 +71,31 @@
             <input type="radio" name="method" value="WaffleCone"> Waffle Cone
         </label>
 
-    </fieldset>
+        <p>Choose some toppings:</p>
+        <label>
+            <input type="checkbox" name="toppings" value="Sprinkles">Sprinkles
+        </label>
+    
+        <label>
+            <input type="checkbox" name="toppings" value="Nuts">Nuts
+        </label>
+    
+        <label>
+            <input type="checkbox" name="toppings" value="Cherries">Cherries
+        </label>
+    
+        <label>
+            <input type="checkbox" name="toppings" value="Whipped cream">Whipped Cream
+        </label>
 
-    <fieldset>
-
-        <!--Toppings-->
-    <legend>Toppings list:</legend>
-    <Legend>($1 dollar per extra topping)</Legend>
-
-    <label>
-        <input type="checkbox" name="toppings" value="Sprinkles">Sprinkles
-    </label>
-
-    <label>
-        <input type="checkbox" name="toppings" value="Nuts">Nuts
-    </label>
-
-    <label>
-        <input type="checkbox" name="toppings" value="Cherries">Cherries
-    </label>
-
-    <label>
-        <input type="checkbox" name="toppings" value="Whipped cream">Whipped Cream
-    </label>
-
+        <p>Additional Comments</p>
+        <textarea></textarea>
 
     </fieldset>
-
-
-
-
-
-
-
-</fieldset>
-
-<fieldset>
-<Legend>Additional Comments</legend>
-<textarea></textarea>
-</fieldset>
 
     <!--Submit button-->
     <button type="submit">Place Order!</button>
-
+ 
 
 
 </form>
